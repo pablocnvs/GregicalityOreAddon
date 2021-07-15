@@ -1,0 +1,130 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url = "https://jitpack.io" }
+        maven { url = "http://maven.minecraftforge.net/" }
+    }
+    dependencies {
+        classpath('com.github.GregTechCE:ForgeGradle:FG_2.3-SNAPSHOT')
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = "1.12.2-0.1"
+group = "pablocnvs"
+archivesBaseName = "GregicalityOreAddon"
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2847"
+    runDir = "run"
+    mappings = "stable_39"
+    makeObfSourceJar = false
+    replace("@VERSION@", project.version)
+    replaceIn("GregicalityOreAddon.java")
+}
+
+
+jar {
+    manifest {
+        attributes 'FMLAT': 'gaoe_at.cfg'
+    }
+}
+
+repositories {
+    maven {
+        url = "https://maven.teamacronymcoders.com/"
+    }
+    maven {
+        url "http://maven.shadowfacts.net/"
+    }
+    maven {
+        name = "OpenComputers"
+        url = "https://maven.cil.li/"
+    }
+    maven {
+        url "http://maven.k-4u.nl"
+    }
+    maven {
+        name = "CurseForge"
+        url = "https://minecraft.curseforge.com/api/maven/"
+    }
+    maven {
+        name = "progwml6"
+        url = "http://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name = "blamejared"
+        url = "http://maven.blamejared.com/"
+    }
+    maven {
+        name = "CCL Maven"
+        url = "http://chickenbones.net/maven/"
+    }
+    maven {
+        name = "CyclopsMC"
+        url = "https://oss.jfrog.org/artifactory/simple/libs-release/"
+    }
+    maven {
+        name 'tterrag Maven'
+        url "https://maven.tterrag.com/"
+    }
+    maven {
+        name = "mcmoddev"
+        url = "https://maven.mcmoddev.com"
+    }
+    maven {
+        name = "ModMaven"
+        url = "https://modmaven.k-4u.nl"
+    }
+    maven {
+        name = "Ellpeck's Maven"
+        url = "https://maven.chaosfield.at"
+    }
+    maven {
+        url = "https://www.cursemaven.com"
+    }
+    maven {
+        url "http://www.ryanliptak.com/maven/"
+    }
+}
+
+dependencies {
+    implementation 'org.jetbrains:annotations:20.1.0'
+    deobfCompile "CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.554"
+    deobfCompile "mezz.jei:jei_1.12.2:+"
+    deobfCompile "gregtechce:gregtech:1.12.2:1.16.1.753"
+    deobfCompile "codechicken:ChickenASM:1.12-1.0.2.9"
+    deobfCompile "codechicken-lib-1-8:CodeChickenLib-1.12.2:3.2.3.358:universal"
+    deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.23-16"
+    deobfCompile "team.chisel.ctm:CTM:MC1.12.2-1.0.2.31"
+    deobfCompile "gregicality:gregicality:1.12.2:0.22.6"
+    provided files("GregTech+Food+Option-1.12.2-0.9.0.jar")
+    //provided files("libs/NuclearCraft-2o.5.2-1.12.2.jar")
+    testImplementation "junit:junit:4.13.1"
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+
+    rename("(.+_at.cfg)", "META-INF/1")
+}
+
+runClient {
+    jvmArgs "-Xmx3G"
+}

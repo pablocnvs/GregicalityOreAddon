@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gregicalityoreaddon",
+  "name": "Gregicality Ore Addon",
+  "description": "This Gregicality Addon (if you can't tell by its name) provides more ore processing chains for existing and new ores.",
+  "version": "0.1",
+  "mcversion": "1.12",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["pablocnvs"],
+  "credits": "Thanks to the Gregicality team to introducing me to the world of mod development, bruberu for the GTFO mod I used as template for this addon, DStrand1 (dan) for sourcing the 1.12 Forge files, the GTCE team for the original addon, and of course, GregoriusT.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

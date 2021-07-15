@@ -1,0 +1,38 @@
+material.rheniite=Rheniite
+material.amblygonite=Amblygonite
+material.aikinite=Aikinite
+material.bertrandite=Bertrandite
+material.bismite=Bismite
+material.carnotite=Carnotite
+material.cerium_monazite=Cerium Monazite
+material.neodymium_monazite=Neodymium Monazite
+material.nickeline=Nickeline
+material.stannite=Stannite
+material.sylvanite=Sylvanite
+material.thorite=Thorite
+material.tourmaline=Tourmaline
+material.vanadinite=Vanadinite
+
+fluid.froth_flotation_fluid=Froth Flotation Fluid
+fluid.dibenzyl_peroxide=Dibenzyl Peroxide
+fluid.methylpentanol=Methylpentanol
+fluid.sodium_isopropyl_xanthate=Sodium Isopropyl Xanthate
+fluid.oleic_acid=Oleic Acid
+fluid.oleic_nitrile=Oleic Nitrile
+fluid.oleic_ammonium_bromide=Oleic Ammonium Bromide
+
+fluid.amblygonite_slurry=Amblygonite Slurry
+fluid.neutral_amblygonite_slurry=Neutralised Amblygonite Slurry
+fluid.lithium_amblygonite_solution=Lithium Amblygonite Solution
+metaitem.major_amblygonite_residue.name=Major Amblygonite Residue
+metaitem.minor_amblygonite_residue.name=Minor Amblygonite Residue
+
+metaitem.beryllium_aluminium_sulfate.name=Beryllium Aluminium Sulfate
+metaitem.ammonium_alum.name=Ammonium Alum
+metaitem.sodium_fluorosilicilate=Sodium Fluorosilicilate
+metaitem.beryllium_hydroxide.name=Beryllium Hydroxide
+
+metaitem.pb_cu_bi_oxides_mix.name=Lead Copper Bismuth Oxides
+metaitem.well_mixed_pb_bi_oxides.name=Well Mixed Lead Bismuth Oxides
+metaitem.calcium_plumbide.name=Calcium Plumbide
+metaitem.calcium_bismuth_alloy.name=Calcium Bismuth Alloy
