@@ -19,6 +19,7 @@ public class AikiniteChain {
                 .outputs(PbCuBiOxidesMix.getItemStack(13))
                 .fluidOutputs(SulfurDioxide.getFluid(6000))
                 .buildAndRegister();
+
         CENTRIFUGE_RECIPES.recipeBuilder()
                 .EUt(60)
                 .duration(150)
@@ -26,6 +27,7 @@ public class AikiniteChain {
                 .outputs(CupricOxide.getItemStack(4))
                 .outputs(WellMixedPbBiOxides.getItemStack(9))
                 .buildAndRegister();
+
         BLAST_RECIPES.recipeBuilder()
                 .blastFurnaceTemp(700)
                 .EUt(120)
@@ -37,6 +39,7 @@ public class AikiniteChain {
                 .outputs(CalciumBismuthAlloy.getItemStack(10))
                 .fluidOutputs(CarbonDioxide.getFluid(5000))
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .EUt(30)
                 .duration(130)
@@ -45,6 +48,7 @@ public class AikiniteChain {
                 .output(dust, Lead)
                 .output(dust, CalciumChloride, 6)
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .EUt(30)
                 .duration(130)
@@ -53,6 +57,7 @@ public class AikiniteChain {
                 .output(dust, Bismuth)
                 .output(dust, CalciumChloride, 3)
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .EUt(120)
                 .duration(190)

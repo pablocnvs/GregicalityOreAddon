@@ -1,6 +1,7 @@
 package com.pablocnvs.gregicalityoreaddon;
 
 import com.pablocnvs.gregicalityoreaddon.recipe.GAOERecipeAddition;
+import com.pablocnvs.gregicalityoreaddon.recipe.GAOERecipeRemoval;
 import com.pablocnvs.gregicalityoreaddon.recipe.OreRecipeHandler;
 import com.pablocnvs.gregicalityoreaddon.utils.GAOELog;
 import gregtech.api.unification.ore.OrePrefix;
@@ -66,9 +67,10 @@ public class CommonProxy {
     public static void registerOrePrefix(RegistryEvent.Register<IRecipe> event) {
         GAOELog.logger.info("Registering ore prefix...");
         OrePrefix.runMaterialHandlers();
+        GAOERecipeRemoval.init();
         GAOERecipeAddition.init();
+        GAOELog.logger.info("Registering froth flotation...");
         OreRecipeHandler.register();
-        GAOELog.logger.info("Registering froth flotation chain...");
     }
 
     private static <T extends Block> ItemBlock createItemBlock(T block, Function<T, ItemBlock> producer) {

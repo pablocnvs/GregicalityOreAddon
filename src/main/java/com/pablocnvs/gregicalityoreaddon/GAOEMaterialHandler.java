@@ -104,12 +104,14 @@ public class GAOEMaterialHandler implements IMaterialHandler {
     public static final SimpleDustMaterial ThoriumSulfate = new SimpleDustMaterial("thorium_sulfate",Thorium.materialRGB,(short) 2022,MaterialIconSet.ROUGH,"Th(SO4)2");
     public static final SimpleDustMaterial ThoriumFluoride = new SimpleDustMaterial("thorium_fluoride",Thorium.materialRGB,(short) 2023,MaterialIconSet.ROUGH,"ThF4");
     public static final SimpleFluidMaterial MoltenCalciumSalts = new SimpleFluidMaterial("molten_calcium_salts",(Fluorite.materialRGB+Calcium.materialRGB)/2);
-
+    public static final SimpleFluidMaterial RareEarthSulfateSolution = new SimpleFluidMaterial("rare_earth_sulfate_solution",(RareEarth.materialRGB*2+SulfuricAcid.materialRGB*3)/5, "REE2(SO4)3");
     //Rheniite
 
     public static final SimpleDustMaterial RoastedRheniite = new SimpleDustMaterial("roasted_rheniite",(Quicklime.materialRGB+Rheniite.materialRGB+ BariumOxide.rgb)/3,(short) 2024,MaterialIconSet.ROUGH);
     public static final SimpleDustMaterial REEFilteredRheniiteResiudalOxides = new SimpleDustMaterial("ree_filtered_rheniite_residual_oxides",(CubicZirconia.materialRGB+HafniumOxide.rgb+NiobiumTantalumOxide.rgb+RarestMetalResidue.materialRGB)/4,(short) 2025,MaterialIconSet.ROUGH);
     public static final SimpleDustMaterial RheniiteResidualOxides = new SimpleDustMaterial("rheniite_residual_oxides",(REEFilteredRheniiteResiudalOxides.rgb+RareEarth.materialRGB)/2,(short) 2026,MaterialIconSet.SHINY);
+    public static final SimpleDustMaterial Leucine = new SimpleDustMaterial("leucine", 0x356a1b,(short) 2031, MaterialIconSet.DULL, "C6H13NO2");
+    public static final SimpleFluidMaterial UsedRheniumSeparationMixture = new SimpleFluidMaterial("used_rhenium_separation_mixture", RheniumSeparationMixture.rgb*5/7);
 
     //Vanadinite
 

@@ -2,7 +2,6 @@ package com.pablocnvs.gregicalityoreaddon.recipe;
 
 import com.pablocnvs.gregicalityoreaddon.recipe.chain.*;
 
-
 public class GAOERecipeAddition {
     public static void init() {
         FrothFlotationChain.init();
@@ -13,5 +12,8 @@ public class GAOERecipeAddition {
         Pyrometallurgy.init();
         TinChain.init();
         NickelChains.init();
+        TelluriumChain.init();
+        ThoriumChains.init();
+        RheniumChain.init();
     }
 }

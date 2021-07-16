@@ -1,7 +1,5 @@
 package com.pablocnvs.gregicalityoreaddon.recipe.chain;
 
-import gregtech.api.unification.OreDictUnifier;
-
 import static com.pablocnvs.gregicalityoreaddon.GAOEMaterialHandler.*;
 import static gregicadditions.GAMaterials.*;
 import static gregtech.api.recipes.RecipeMaps.*;
