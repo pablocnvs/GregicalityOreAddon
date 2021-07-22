@@ -1,0 +1,39 @@
+{
+  "weight": 25,
+  "density": 0.6,
+  "max_height": 50,
+  "min_height": 20,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "bowieite"
+  },
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+		{
+          "weight": 35,
+          "value": "ore:chromite"
+        },
+		{
+          "weight": 20,
+          "value": "ore:bowieite"
+        },
+		{
+          "weight": 20,
+          "value": "ore:cooperite"
+        },
+        {
+          "weight": 35,
+          "value": "ore:garnierite"
+        }
+
+      ]
+    }
+  }
+}

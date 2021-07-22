@@ -1,0 +1,42 @@
+{
+  "weight": 25,
+  "density": 0.5,
+  "min_height": 15,
+  "max_height": 55,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "fluorite"
+  },
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [12, 14]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 30,
+          "value": "ore:fluorite"
+        },
+        {
+          "weight": 15,
+          "value": "ore:calcite"
+        },
+        {
+          "weight": 15,
+          "value": "ore:barytocalcite"
+        },
+        {
+          "weight": 10,
+          "value": "ore:witherite"
+        },
+        {
+          "weight": 25,
+          "value": "ore:quartzite"
+        }
+      ]
+    }
+  }
+}
