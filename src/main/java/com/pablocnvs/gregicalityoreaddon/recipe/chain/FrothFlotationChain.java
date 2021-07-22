@@ -9,6 +9,27 @@ import static gregtech.api.unification.ore.OrePrefix.*;
 
 public class FrothFlotationChain {
     public static void init(){
+        CHEMICAL_RECIPES.recipeBuilder()
+                .duration(160)
+                .EUt(125)
+                .inputs(PalladiumChloride.getItemStack(3))
+                .inputs(Alumina.getItemStack(15))
+                .fluidInputs(Water.getFluid(1000))
+                .fluidInputs(IsopropylAlcohol.getFluid(1000))
+                .outputs(PalladiumAluminaCatalyst.getItemStack(15))
+                .fluidOutputs(DilutedHydrochloricAcid.getFluid(2000))
+                .buildAndRegister();
+
+
+        FLUID_HEATER_RECIPES.recipeBuilder()
+                .duration(360)
+                .EUt(32)
+                .notConsumable(PalladiumAluminaCatalyst.getItemStack())
+                .fluidInputs(StearicAcid.getFluid(1000))
+                .fluidOutputs(OleicAcid.getFluid(1000))
+                .buildAndRegister();
+
+
         LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .duration(160)
                 .EUt(760)
@@ -74,7 +95,5 @@ public class FrothFlotationChain {
                 .duration(210)
                 .EUt(480)
                 .buildAndRegister();
-
-
     }
 }

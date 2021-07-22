@@ -46,7 +46,7 @@ public class TinChain {
                 .inputs(TinCopperMix.getItemStack(3))
                 .fluidInputs(HydrogenSulfide.getFluid(2000))
                 .outputs(ImpureTinDust.getItemStack())
-                .outputs(CopperSulfide.getItemStack())
+                .outputs(CopperSulfide.getItemStack(4))
                 .fluidOutputs(Hydrogen.getFluid(4000))
                 .buildAndRegister();
 

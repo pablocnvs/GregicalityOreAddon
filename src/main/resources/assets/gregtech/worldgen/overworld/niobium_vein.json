@@ -1,0 +1,42 @@
+{
+  "weight": 18,
+  "density": 0.5,
+  "min_height": 15,
+  "max_height": 45,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "niobium"
+  },
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [11, 13]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 25,
+          "value": "ore:columbite"
+        },
+        {
+          "weight": 25,
+          "value": "ore:tantalite"
+        },
+        {
+          "weight": 10,
+          "value": "ore:monazite"
+        },
+        {
+          "weight": 15,
+          "value": "ore:fluoroapatite"
+        },
+        {
+          "weight": 25,
+          "value": "ore:fluorite"
+        }
+      ]
+    }
+  }
+}

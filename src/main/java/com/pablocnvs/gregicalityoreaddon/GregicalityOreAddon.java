@@ -1,7 +1,7 @@
 package com.pablocnvs.gregicalityoreaddon;
 
-import com.pablocnvs.gregicalityoreaddon.recipe.OreRecipeHandler;
 import com.pablocnvs.gregicalityoreaddon.utils.GAOELog;
+import gregicadditions.network.IPSaveData;
 import gregtech.api.GTValues;
 import gregtech.api.capability.SimpleCapabilityManager;
 import gregtech.api.net.NetworkHandler;
@@ -25,16 +25,6 @@ public class GregicalityOreAddon {
     public static final String MODID = "gregicalityoreaddon";
     public static final String NAME = "Gregicality Ore Addon";
     public static final String VERSION = "@1.12@";
-
-    /*
-    static {
-        if (FMLCommonHandler.instance().getSide().isClient()) {
-
-        }
-    }
-    */
-
-
 
     @SidedProxy(modId = MODID, clientSide = "com.pablocnvs.gregicalityoreaddon.ClientProxy", serverSide = "com.pablocnvs.gregicalityoreaddon.CommonProxy")
     public static CommonProxy proxy;
@@ -62,10 +52,5 @@ public class GregicalityOreAddon {
 
     }
 
-    @Mod.EventHandler
-    public void serverStarted(FMLServerStartedEvent event) {
-        if (FMLCommonHandler.instance().getEffectiveSide() == Side.SERVER) {
-            World world = FMLCommonHandler.instance().getMinecraftServerInstance().getEntityWorld();
-        }
-    }
+
 }

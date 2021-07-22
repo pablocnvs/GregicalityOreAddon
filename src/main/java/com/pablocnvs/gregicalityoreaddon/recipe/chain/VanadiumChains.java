@@ -42,6 +42,15 @@ public class VanadiumChains {
                 .fluidOutputs(SaltWater.getFluid(2000))
                 .buildAndRegister();
 
+        ELECTROLYZER_RECIPES.recipeBuilder()
+                .duration(165)
+                .EUt(32)
+                .inputs(LeadSulfate.getItemStack(6))
+                .output(dust, Lead)
+                .output(dust, Sulfur)
+                .fluidOutputs(Oxygen.getFluid(4000))
+                .buildAndRegister();
+
         LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .duration(130)
                 .EUt(125)
@@ -75,6 +84,7 @@ public class VanadiumChains {
         BLAST_RECIPES.recipeBuilder()
                 .duration(210)
                 .EUt(125)
+                .blastFurnaceTemp(1500)
                 .input(dust, CubicZirconia, 3)
                 .input(dust, SodaAsh, 6)
                 .outputs(SodiumZirconate.getItemStack(6))

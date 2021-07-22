@@ -1,5 +1,7 @@
 package com.pablocnvs.gregicalityoreaddon.recipe.chain;
 
+import gregtech.api.unification.OreDictUnifier;
+
 import static com.pablocnvs.gregicalityoreaddon.GAOEMaterialHandler.*;
 import static gregicadditions.GAMaterials.*;
 import static gregicadditions.recipes.GARecipeMaps.*;
@@ -21,6 +23,15 @@ public class NickelChains {
                 .outputs(NickelRareResidue.getItemStack())
                 .fluidOutputs(NickelSulfuricSolution.getFluid(10000))
                 .buildAndRegister();
+        SIFTER_RECIPES.recipeBuilder()
+                .duration(450)
+                .EUt(125)
+                .inputs(NickelRareResidue.getItemStack())
+                .chancedOutput(OreDictUnifier.get(dust, Silver), 1650, 700)
+                .chancedOutput(OreDictUnifier.get(dust, Zinc), 2500, 900)
+                .chancedOutput(OreDictUnifier.get(dust, PlatinumMetallicPowder), 1250, 350)
+                .buildAndRegister();
+
         VACUUM_RECIPES.recipeBuilder()
                 .duration(210)
                 .EUt(125)
@@ -28,6 +39,7 @@ public class NickelChains {
                 .outputs(NickelSulfatePrecipitate.getItemStack())
                 .fluidOutputs(ArsenicSolution.getFluid(150))
                 .buildAndRegister();
+
         CENTRIFUGE_RECIPES.recipeBuilder()
                 .duration(190)
                 .EUt(250)
@@ -38,6 +50,7 @@ public class NickelChains {
                 .output(dust, Iodine, 4)
                 .fluidOutputs(Water.getFluid(5000))
                 .buildAndRegister();
+
         BLAST_RECIPES.recipeBuilder()
                 .duration(210)
                 .EUt(250)
@@ -49,6 +62,7 @@ public class NickelChains {
                 .outputs(CopperSulfide.getItemStack(2))
                 .fluidOutputs(SulfurDioxide.getFluid(1000))
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .duration(150)
                 .EUt(250)
@@ -58,6 +72,7 @@ public class NickelChains {
                 .output(dust, Nickel)
                 .fluidOutputs(AmmoniaMetalSulfuricSolution.getFluid(1000))
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .duration(130)
                 .EUt(125)
@@ -67,14 +82,7 @@ public class NickelChains {
                 .outputs(CobaltSulfide.getItemStack(2))
                 .fluidOutputs(AmmoniumSulfate.getFluid(7000))
                 .buildAndRegister();
-        CHEMICAL_RECIPES.recipeBuilder()
-                .duration(150)
-                .EUt(125)
-                .inputs(NickelSulfide.getItemStack(2))
-                .fluidInputs(Hydrogen.getFluid(2000))
-                .output(dust, Nickel)
-                .fluidOutputs(HydrogenSulfide.getFluid(1000))
-                .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .duration(150)
                 .EUt(125)
@@ -84,5 +92,13 @@ public class NickelChains {
                 .fluidOutputs(HydrogenSulfide.getFluid(1000))
                 .buildAndRegister();
 
+        CHEMICAL_RECIPES.recipeBuilder()
+                .duration(150)
+                .EUt(125)
+                .inputs(NickelSulfide.getItemStack(2))
+                .fluidInputs(Hydrogen.getFluid(2000))
+                .output(dust, Nickel)
+                .fluidOutputs(HydrogenSulfide.getFluid(1000))
+                .buildAndRegister();
     }
 }

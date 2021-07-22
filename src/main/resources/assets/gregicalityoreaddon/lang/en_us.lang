@@ -12,14 +12,17 @@ material.sylvanite=Sylvanite
 material.thorite=Thorite
 material.tourmaline=Tourmaline
 material.vanadinite=Vanadinite
+material.carrolite=Carrolite
 
 fluid.froth_flotation_fluid=Froth Flotation Fluid
 fluid.dibenzyl_peroxide=Dibenzyl Peroxide
 fluid.methylpentanol=Methylpentanol
+fluid.isobutyl_bromide=Isobutyl Bromide
 fluid.sodium_isopropyl_xanthate=Sodium Isopropyl Xanthate
 fluid.oleic_acid=Oleic Acid
 fluid.oleic_nitrile=Oleic Nitrile
 fluid.oleic_ammonium_bromide=Oleic Ammonium Bromide
+metaitem.palladium_alumina_catalyst.name=Palladium Alumina Catalyst
 
 fluid.amblygonite_slurry=Amblygonite Slurry
 fluid.neutral_amblygonite_slurry=Neutralised Amblygonite Slurry
@@ -29,7 +32,7 @@ metaitem.minor_amblygonite_residue.name=Minor Amblygonite Residue
 
 metaitem.beryllium_aluminium_sulfate.name=Beryllium Aluminium Sulfate
 metaitem.ammonium_alum.name=Ammonium Alum
-metaitem.sodium_fluorosilicilate.name=Sodium Fluorosilicilate
+metaitem.sodium_fluorosilicate.name=Sodium Fluorosilicate
 metaitem.beryllium_hydroxide.name=Beryllium Hydroxide
 fluid.sodium_fluoroberyllate=Sodium Fluoroberyllate
 
@@ -43,20 +46,20 @@ metaitem.roasted_carnotite.name=Roasted Carnotite
 
 metaitem.nickel_rare_residue.name=Nickel Rare Residue
 metaitem.nickel_sulfate_precipitate.name=Nickel Sulfate Precipitate
-metaitem.copper_free_nickel_sulfate=Copper-Free Nickel Sulfide
+metaitem.copper_free_nickel_sulfate.name=Copper-Free Nickel Sulfide
 metaitem.nickel_sulfide.name=Nickel Sulfide
 metaitem.cobalt_sulfide.name=Cobalt Sulfide
 fluid.nickel_sulfuric_solution=Nickel Sulfuric Solution
 fluid.arsenic_solution=Sodium Arsenate Sulfuric Solution
-fluid.ammonia_metal_sulfate_solution=Ammonia Metal Sulfate Solution
+fluid.ammonia_metal_sulfuric_solution=Ammonia Metal Sulfuric Solution
 
 metaitem.cu_sn_fe_oxides_mix.name=Copper Tin Iron Oxides Mixture
 metaitem.tin_copper_mix.name=Tin Copper Mixture
-metaitem.impure_tin_dust=Impure Tin Dust
-metaitem.iron_silicate_residue=Iron Silicate Residue
+metaitem.impure_tin_dust.name=Impure Tin Dust
+metaitem.iron_silicate_residue.name=Iron Silicate Residue
 
 metaitem.gold_telluride.name=Gold Telluride
-fluid.thiourea.name=Thiourea
+fluid.thiourea=Thiourea
 fluid.gold_thiourea_solution=Gold Thiourea Solution
 
 metaitem.thorium_sulfate.name=Thorium Sulfate
@@ -73,5 +76,12 @@ fluid.used_rhenium_separation_mixture=Used Rhenium Separation Mixture
 metaitem.sodium_zirconate.name=Sodium Zirconate
 metaitem.zirconium_hydrogenphosphate.name=Zirconium Hydrogenphosphate
 fluid.zinc_vanadyl_sulfate_solution=Zinc Vanadyl Sulfate Solution
+fluid.purified_zinc_vanadyl_sulfate_solution=Purified Zinc Vanadyl Sulfate Solution
 metaitem.lead_sulfate.name=Lead Sulfate
-metaitem.copper_sulfate.name=Copper Sulfide
+metaitem.copper_sulfide.name=Copper Sulfide
+
+metaitem.roasted_carrolite.name=Roasted Carrolite
+fluid.carrolite_sulfuric_solution=Carrolite Sulfuric Solution
+fluid.impure_cobalt_sulfide_solution=Impure Cobalt Sulfate Solution
+metaitem.cobalt_oxide_hydroxide.name=Cobalt Oxide Hydroxide
+metaitem.sodium_hydrosulfide.name=Sodium Hydrosulfide

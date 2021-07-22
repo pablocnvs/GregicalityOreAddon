@@ -1,10 +1,9 @@
 package com.pablocnvs.gregicalityoreaddon;
 
-import com.pablocnvs.gregicalityoreaddon.recipe.GAOERecipeAddition;
+import com.pablocnvs.gregicalityoreaddon.recipe.RecipeHandler;
 import com.pablocnvs.gregicalityoreaddon.recipe.GAOERecipeRemoval;
-import com.pablocnvs.gregicalityoreaddon.recipe.OreRecipeHandler;
 import com.pablocnvs.gregicalityoreaddon.utils.GAOELog;
-import gregtech.api.unification.ore.OrePrefix;
+import com.pablocnvs.gregicalityoreaddon.worldgen.ores.GAOEOreGenRegister;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -16,7 +15,6 @@ import net.minecraftforge.fml.client.event.ConfigChangedEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.registries.IForgeRegistry;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -29,10 +27,11 @@ public class CommonProxy {
 
     public void preLoad() {
         GAOEMaterialHandler gaoeMaterials = new GAOEMaterialHandler();
+        RecipeHandler.register();
     }
 
     public void onLoad() throws IOException {
-
+        GAOEOreGenRegister.init();
     }
 
     @SubscribeEvent
@@ -44,33 +43,25 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        /*
-        GTFOLog.logger.info("Registering blocks...");
-        IForgeRegistry<Block> registry = event.getRegistry();
-        registry.register(GAMetaBlocks.MUTLIBLOCK_CASING);
-         */
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         GAOELog.logger.info("Registering Items...");
-        IForgeRegistry<Item> registry = event.getRegistry();
     }
 
     @SubscribeEvent(priority = EventPriority.LOW)
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
         GAOELog.logger.info("Registering recipe low...");
+        GAOERecipeRemoval.init();
+        RecipeHandler.initChains();
     }
 
 
     @SubscribeEvent
     public static void registerOrePrefix(RegistryEvent.Register<IRecipe> event) {
-        GAOELog.logger.info("Registering ore prefix...");
-        OrePrefix.runMaterialHandlers();
-        GAOERecipeRemoval.init();
-        GAOERecipeAddition.init();
-        GAOELog.logger.info("Registering froth flotation...");
-        OreRecipeHandler.register();
+        GAOELog.logger.info("Registering ore prefixes...");
+
     }
 
     private static <T extends Block> ItemBlock createItemBlock(T block, Function<T, ItemBlock> producer) {

@@ -1,0 +1,38 @@
+{
+  "weight": 30,
+  "density": 0.4,
+  "max_height": 40,
+  "min_height": 20,
+  "vein_populator": {
+    "type": "surface_rock",
+    "material": "monazite"
+  },
+  "generator": {
+    "type": "ellipsoid",
+    "radius": [13, 13]
+  },
+  "filler": {
+    "type": "simple",
+    "value": {
+      "type": "weight_random",
+      "values": [
+        {
+          "weight": 55,
+          "value": "ore:bastnasite"
+        },
+        {
+          "weight": 15,
+          "value": "ore:monazite"
+        },
+        {
+          "weight": 15,
+          "value": "ore:neodymium_monazite"
+        },
+        {
+          "weight": 15,
+          "value": "ore:cerium_monazite"
+        }
+      ]
+    }
+  }
+}
