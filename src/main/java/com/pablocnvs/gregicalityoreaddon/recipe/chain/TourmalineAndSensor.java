@@ -50,7 +50,7 @@ public class TourmalineAndSensor {
                 .fluidOutputs(Hydrogen.getFluid(1000))
                 .buildAndRegister();
 
-        LARGE_CHEMICAL_RECIPES.recipeBuilder()
+        /*LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .duration(210)
                 .EUt(32750)
                 .input(dust, Trinium)
@@ -59,7 +59,7 @@ public class TourmalineAndSensor {
                 .fluidOutputs(Krypton.getFluid(2000))
                 .buildAndRegister();
 
-        /*LARGE_CHEMICAL_RECIPES.recipeBuilder()
+        LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .duration(260)
                 .EUt(8100)
                 .inputs(TriniumTetrafluoride.getItemStack(5))

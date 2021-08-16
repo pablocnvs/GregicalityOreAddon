@@ -110,6 +110,8 @@ public class GAOEMaterialHandler implements IMaterialHandler {
     public static final GAOEOredictItem.OreDictItem ThoriumSulfate = new GAOEOredictItem.OreDictItem("thorium_sulfate",Thorium.materialRGB,(short) 2023,MaterialIconSet.ROUGH,"Th(SO4)2");
     public static final GAOEOredictItem.OreDictItem ThoriumFluoride = new GAOEOredictItem.OreDictItem("thorium_fluoride",Thorium.materialRGB,(short) 2024,MaterialIconSet.ROUGH,"ThF4");
     public static final GAOEFluidMaterial RareEarthSulfateSolution = new GAOEFluidMaterial("rare_earth_sulfate_solution",(RareEarth.materialRGB*2+SulfuricAcid.materialRGB*3)/5, "REE2(SO4)3");
+    public static final GAOEFluidMaterial MoltenCalciumSalts = new GAOEFluidMaterial("molten_calcium_salts", (Calcium.materialRGB+Fluorite.materialRGB)/2);
+
     //Rheniite
 
     public static final GAOEOredictItem.OreDictItem RoastedRheniite = new GAOEOredictItem.OreDictItem("roasted_rheniite",(Quicklime.materialRGB+Rheniite.materialRGB+ BariumOxide.rgb)/3,(short) 2025,MaterialIconSet.ROUGH);
@@ -139,7 +141,7 @@ public class GAOEMaterialHandler implements IMaterialHandler {
     //Tourmaline Lenses
     public static final GAOEOredictItem.OreDictItem HafniumOxalate = new GAOEOredictItem.OreDictItem("hafnium_oxalate", HafniumOxide.rgb, (short) 2036, MaterialIconSet.METALLIC, "Hf(C2O4)2");
     public static final GAOEFluidMaterial HafniumOxideNPSolution = new GAOEFluidMaterial("hafnium_oxide_np_solution", Water.materialRGB*3/5 + HafniumOxide.rgb*2/5, "HfO2(H2O)2");
-    public static final GAOEOredictItem.OreDictItem RubidiumNitrate = new GAOEOredictItem.OreDictItem("rubidium_nitrate", CaesiumNitrate.rgb, (short) 2037, MaterialIconSet.DULL,  "RbNO3");
+    public static final GAOEOredictItem.OreDictItem RubidiumNitrate = new GAOEOredictItem.OreDictItem("rubidium_nitrate", SodiumNitrite.rgb, (short) 2037, MaterialIconSet.DULL,  "RbNO3");
     public static final GAOEOredictItem.OreDictItem EnrichedNaquadahOxalate = new GAOEOredictItem.OreDictItem("enriched_naquadah_oxalate", EnrichedXenonHexafluoronaquadate.rgb/2, (short) 2038, MaterialIconSet.METALLIC, "Nq+C2O42");
     //public static final GAOEOredictItem.OreDictItem TriniumOxalate = new GAOEOredictItem.OreDictItem("trinium_oxalate", Triniite.materialRGB, (short) 2039, MaterialIconSet.METALLIC, "Ke(C2O4)2");
     public static final GAOEFluidMaterial ThermochromaticSolution = new GAOEFluidMaterial("thermochromatic_solution",HafniumOxideNPSolution.rgb*3/5+RubidiumNitrate.rgb/5+MercuryIodide.rgb/5);
