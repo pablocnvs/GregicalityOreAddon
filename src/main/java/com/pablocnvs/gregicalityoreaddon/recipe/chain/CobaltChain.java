@@ -66,7 +66,6 @@ public class CobaltChain {
                 .inputs(CobaltOxideHydroxide.getItemStack(4))
                 .fluidInputs(Hydrogen.getFluid(1000))
                 .output(dust, CobaltOxide, 2)
-                .fluidOutputs(Water.getFluid(1000))
                 .buildAndRegister();
 
         BLAST_RECIPES.recipeBuilder()

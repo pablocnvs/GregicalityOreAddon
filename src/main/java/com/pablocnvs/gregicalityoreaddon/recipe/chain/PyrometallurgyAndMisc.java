@@ -23,6 +23,8 @@ public class PyrometallurgyAndMisc {
                 .output(dust, Calcite, 20)
                 .fluidOutputs(SodiumChromateSolution.getFluid(2000))
                 .buildAndRegister();
+
+        //Copper
         BLAST_RECIPES.recipeBuilder()
                 .duration(215)
                 .EUt(60)
@@ -43,7 +45,6 @@ public class PyrometallurgyAndMisc {
                 .chancedOutput(OreDictUnifier.get(dustSmall, DarkAsh), 2500, 750)
                 .fluidOutputs(CarbonDioxide.getFluid(1000))
                 .buildAndRegister();
-
 
     }
 }

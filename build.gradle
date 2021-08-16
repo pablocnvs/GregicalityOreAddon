@@ -10,7 +10,7 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-version = "1.12.2-0.1"
+version = "1.12.2-0.1.1"
 group = "pablocnvs"
 archivesBaseName = "GregicalityOreAddon"
 
@@ -102,8 +102,8 @@ dependencies {
     deobfCompile "codechicken-lib-1-8:CodeChickenLib-1.12.2:3.2.3.358:universal"
     deobfCompile "mcjty.theoneprobe:TheOneProbe-1.12:1.12-1.4.23-16"
     deobfCompile "team.chisel.ctm:CTM:MC1.12.2-1.0.2.31"
-    deobfCompile "gregicality:gregicality:1.12.2:0.22.7"
-    provided files("GregTech+Food+Option-1.12.2-0.9.0.jar")
+    provided files("Gregicality-1.12.2-0.22.7.jar")
+    provided files("GregTech+Food+Option-1.12.2-0.10.1.jar")
     //provided files("libs/NuclearCraft-2o.5.2-1.12.2.jar")
     testImplementation "junit:junit:4.13.1"
 }

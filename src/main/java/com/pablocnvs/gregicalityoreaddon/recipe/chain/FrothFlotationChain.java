@@ -1,11 +1,15 @@
 package com.pablocnvs.gregicalityoreaddon.recipe.chain;
 
+import net.minecraftforge.fml.common.Loader;
+
+import static com.pablocnvs.gregicalityoreaddon.integration.GAOEGTFOMaterialHandler.*;
 import static com.pablocnvs.gregicalityoreaddon.GAOEMaterialHandler.*;
 import static gregicadditions.GAMaterials.*;
 import static gregicadditions.recipes.GARecipeMaps.*;
 import static gregtech.api.recipes.RecipeMaps.*;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
+import static com.bruberu.gregtechfoodoption.GTFOMaterialHandler.*;
 
 public class FrothFlotationChain {
     public static void init(){
@@ -20,7 +24,6 @@ public class FrothFlotationChain {
                 .fluidOutputs(DilutedHydrochloricAcid.getFluid(2000))
                 .buildAndRegister();
 
-
         FLUID_HEATER_RECIPES.recipeBuilder()
                 .duration(360)
                 .EUt(32)
@@ -28,7 +31,6 @@ public class FrothFlotationChain {
                 .fluidInputs(StearicAcid.getFluid(1000))
                 .fluidOutputs(OleicAcid.getFluid(1000))
                 .buildAndRegister();
-
 
         LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .duration(160)
@@ -41,6 +43,7 @@ public class FrothFlotationChain {
                 .fluidOutputs(Water.getFluid(1000))
                 .fluidOutputs(Phenol.getFluid(100))
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .duration(100)
                 .EUt(120)
@@ -50,6 +53,7 @@ public class FrothFlotationChain {
                 .fluidOutputs(DibenzylPeroxide.getFluid(1000))
                 .fluidOutputs(Water.getFluid(2000))
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .duration(120)
                 .EUt(480)
@@ -60,6 +64,7 @@ public class FrothFlotationChain {
                 .outputs(MgClBromide.getItemStack(3))
                 .fluidOutputs(Methylpentanol.getFluid(1000))
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .duration(130)
                 .EUt(120)
@@ -69,6 +74,7 @@ public class FrothFlotationChain {
                 .fluidOutputs(SodiumIsopropylXanthate.getFluid(1000))
                 .fluidOutputs(Water.getFluid(1000))
                 .buildAndRegister();
+
         CHEMICAL_RECIPES.recipeBuilder()
                 .duration(130)
                 .EUt(120)
@@ -77,6 +83,7 @@ public class FrothFlotationChain {
                 .fluidOutputs(OleicNitrile.getFluid(1000))
                 .fluidOutputs(Water.getFluid(2000))
                 .buildAndRegister();
+
         LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .duration(130)
                 .EUt(120)
@@ -86,6 +93,7 @@ public class FrothFlotationChain {
                 .notConsumable(Ammonia)
                 .fluidOutputs(OleicAmmoniumBromide.getFluid(1000))
                 .buildAndRegister();
+
         LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .fluidInputs(Methylpentanol.getFluid(375))
                 .fluidInputs(OleicAmmoniumBromide.getFluid(250))
@@ -95,5 +103,29 @@ public class FrothFlotationChain {
                 .duration(210)
                 .EUt(480)
                 .buildAndRegister();
+
+        if (Loader.isModLoaded("gregtechfoodoption")){
+
+            CHEMICAL_RECIPES.recipeBuilder().duration(160).EUt(2000)
+                .fluidInputs(OliveOil.getFluid(1000))
+                .fluidInputs(Steam.getFluid(200))
+                .fluidInputs(PotassiumHydroxide.getFluid(1000))
+                .fluidOutputs(OliveSoap.getFluid(1000))
+                .buildAndRegister();
+
+        CHEMICAL_RECIPES.recipeBuilder().duration(160).EUt(2000)
+                .fluidInputs(OliveSoap.getFluid(1000))
+                .input(dust, Salt, 1)
+                .fluidOutputs(Glycerol.getFluid(200))
+                .fluidOutputs(DeglyceratedOliveSoap.getFluid(800))
+                .buildAndRegister();
+
+        CHEMICAL_DEHYDRATOR_RECIPES.recipeBuilder().duration(160).EUt(2000)
+                .fluidInputs(DeglyceratedOliveSoap.getFluid(1000))
+                .output(dust, Salt, 1)
+                .fluidOutputs(StearicAcid.getFluid(400))
+                .fluidOutputs(OleicAcid.getFluid(400))
+                .buildAndRegister();
+        }
     }
 }

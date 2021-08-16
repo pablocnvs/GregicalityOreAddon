@@ -18,7 +18,7 @@ public class RheniumChain {
                 .input(dust, Quicklime, 4)
                 .fluidInputs(SulfurTrioxide.getFluid(8000))
                 .outputs(RoastedRheniite.getItemStack(10))
-                .fluidOutputs(RheniumSulfuricSolution.getFluid(120000))
+                .fluidOutputs(RheniumSulfuricSolution.getFluid(12000))
                 .buildAndRegister();
 
         LARGE_CHEMICAL_RECIPES.recipeBuilder()
@@ -90,16 +90,17 @@ public class RheniumChain {
                 .chancedOutput(Yeast.getItemStack(), 3000, 1500)
                 .buildAndRegister();
 
-        /*BIO_REACTOR_RECIPES.recipeBuilder()
+        BIO_REACTOR_RECIPES.recipeBuilder()
                 .duration(210)
                 .EUt(8120)
                 .inputs(Leucine.getItemStack(22))
+                .input(dust, Quicklime)
                 .fluidInputs(FormicAcid.getFluid(2000))
                 .inputs(CupriavidusNecator.getItemStack())
                 .fluidOutputs(MethylIsobutylKetone.getFluid(1000))
-                .fluidOutputs(CarbonDioxide.getFluid(2000))
+                .output(dust, Calcite)
                 .fluidOutputs(Ammonia.getFluid(1000))
                 .buildAndRegister();
-        */
+
     }
 }

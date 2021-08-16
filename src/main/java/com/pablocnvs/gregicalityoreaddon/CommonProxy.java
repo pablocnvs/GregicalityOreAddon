@@ -1,5 +1,8 @@
 package com.pablocnvs.gregicalityoreaddon;
 
+import com.pablocnvs.gregicalityoreaddon.fluid.GAOEMetaFluids;
+import com.pablocnvs.gregicalityoreaddon.integration.GAOEGTFOMaterialHandler;
+import com.pablocnvs.gregicalityoreaddon.items.GAOEMetaItems;
 import com.pablocnvs.gregicalityoreaddon.recipe.RecipeHandler;
 import com.pablocnvs.gregicalityoreaddon.recipe.GAOERecipeRemoval;
 import com.pablocnvs.gregicalityoreaddon.utils.GAOELog;
@@ -12,6 +15,7 @@ import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -27,11 +31,17 @@ public class CommonProxy {
 
     public void preLoad() {
         GAOEMaterialHandler gaoeMaterials = new GAOEMaterialHandler();
+        if (Loader.isModLoaded("gregtechfoodoption")){
+            GAOEGTFOMaterialHandler gaoegtfoMaterials = new GAOEGTFOMaterialHandler();
+        }
+        GAOEMetaFluids.init();
+        GAOEMetaItems.init();
         RecipeHandler.register();
     }
 
     public void onLoad() throws IOException {
         GAOEOreGenRegister.init();
+
     }
 
     @SubscribeEvent
@@ -48,6 +58,7 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         GAOELog.logger.info("Registering Items...");
+        GAOEMetaItems.registerOreDict();
     }
 
     @SubscribeEvent(priority = EventPriority.LOW)

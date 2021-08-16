@@ -1,10 +1,13 @@
 package com.pablocnvs.gregicalityoreaddon;
 
 import com.pablocnvs.gregicalityoreaddon.utils.GAOELog;
+import gregicadditions.GAEnums;
 import gregicadditions.network.IPSaveData;
+import gregicadditions.utils.GALog;
 import gregtech.api.GTValues;
 import gregtech.api.capability.SimpleCapabilityManager;
 import gregtech.api.net.NetworkHandler;
+import gregtech.api.recipes.RecipeMaps;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.FMLCommonHandler;
@@ -18,6 +21,10 @@ import net.minecraftforge.fml.relauncher.Side;
 
 import java.io.IOException;
 
+import gregicadditions.GAEnums;
+
+import static gregicadditions.GAEnums.addSlotsToGTCEMaps;
+
 @Mod(modid = GregicalityOreAddon.MODID, name = GregicalityOreAddon.NAME, version = GregicalityOreAddon.VERSION,
         dependencies = "required-after:gregtech@[1.14.0.689,);" +
                 "after:exnihilocreatio;")
@@ -30,7 +37,15 @@ public class GregicalityOreAddon {
     public static CommonProxy proxy;
 
     public GregicalityOreAddon() {
-
+        try {
+            addSlotsToGTCEMaps(
+                    RecipeMaps.FLUID_HEATER_RECIPES,
+                    "maxInputs",
+                    1);
+        } catch (Exception e) {
+            GAOELog.logger.error("Error setting recipe map fields, {}",
+                    e.toString());
+        }
     }
 
     @Mod.EventHandler

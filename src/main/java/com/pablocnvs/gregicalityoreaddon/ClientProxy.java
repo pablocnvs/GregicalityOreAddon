@@ -1,6 +1,8 @@
 package com.pablocnvs.gregicalityoreaddon;
 
 import codechicken.lib.util.ItemNBTUtils;
+import com.pablocnvs.gregicalityoreaddon.items.GAOEMetaItem;
+import com.pablocnvs.gregicalityoreaddon.items.GAOEMetaItems;
 import com.pablocnvs.gregicalityoreaddon.utils.GAOELog;
 import gregicadditions.item.GADustItem;
 import gregicadditions.materials.SimpleDustMaterial;
@@ -37,5 +39,6 @@ public class ClientProxy extends CommonProxy {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event) {
+        GAOEMetaItems.registerModels();
     }
 }

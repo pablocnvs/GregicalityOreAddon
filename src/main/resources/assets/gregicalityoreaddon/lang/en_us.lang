@@ -22,66 +22,90 @@ fluid.sodium_isopropyl_xanthate=Sodium Isopropyl Xanthate
 fluid.oleic_acid=Oleic Acid
 fluid.oleic_nitrile=Oleic Nitrile
 fluid.oleic_ammonium_bromide=Oleic Ammonium Bromide
-metaitem.palladium_alumina_catalyst.name=Palladium Alumina Catalyst
-
+metaitem.palladium_alumina_catalyst_dust.name=Palladium Alumina Catalyst
+fluid.olive_soap=Olive Soap
+fluid.deglycerated_olive_soap=Deglycerated Olive Soap
 fluid.amblygonite_slurry=Amblygonite Slurry
 fluid.neutral_amblygonite_slurry=Neutralised Amblygonite Slurry
 fluid.lithium_amblygonite_solution=Lithium Amblygonite Solution
-metaitem.major_amblygonite_residue.name=Major Amblygonite Residue
-metaitem.minor_amblygonite_residue.name=Minor Amblygonite Residue
+metaitem.major_amblygonite_residue_dust.name=Major Amblygonite Residue
+metaitem.minor_amblygonite_residue_dust.name=Minor Amblygonite Residue
 
-metaitem.beryllium_aluminium_sulfate.name=Beryllium Aluminium Sulfate
-metaitem.ammonium_alum.name=Ammonium Alum
-metaitem.sodium_fluorosilicate.name=Sodium Fluorosilicate
-metaitem.beryllium_hydroxide.name=Beryllium Hydroxide
+metaitem.beryllium_aluminium_sulfate_dust.name=Beryllium Aluminium Sulfate
+metaitem.ammonium_alum_dust.name=Ammonium Alum
+metaitem.sodium_fluorosilicate_dust.name=Sodium Fluorosilicate
+metaitem.beryllium_hydroxide_dust.name=Beryllium Hydroxide
 fluid.sodium_fluoroberyllate=Sodium Fluoroberyllate
 
-metaitem.pb_cu_bi_oxides_mix.name=Lead Copper Bismuth Oxides
-metaitem.well_mixed_pb_bi_oxides.name=Well Mixed Lead Bismuth Oxides
-metaitem.calcium_plumbide.name=Calcium Plumbide
-metaitem.calcium_bismuth_alloy.name=Calcium Bismuth Alloy
-metaitem.cupric_oxide.name=Cupric Oxide
+metaitem.pb_cu_bi_oxides_mix_dust.name=Lead Copper Bismuth Oxides
+metaitem.well_mixed_pb_bi_oxides_dust.name=Well Mixed Lead Bismuth Oxides
+metaitem.calcium_plumbide_dust.name=Calcium Plumbide
+metaitem.calcium_bismuth_alloy_dust.name=Calcium Bismuth Alloy
+metaitem.cupric_oxide_dust.name=Cupric Oxide
 
-metaitem.roasted_carnotite.name=Roasted Carnotite
+metaitem.roasted_carnotite_dust.name=Roasted Carnotite
 
-metaitem.nickel_rare_residue.name=Nickel Rare Residue
-metaitem.nickel_sulfate_precipitate.name=Nickel Sulfate Precipitate
-metaitem.copper_free_nickel_sulfate.name=Copper-Free Nickel Sulfide
-metaitem.nickel_sulfide.name=Nickel Sulfide
-metaitem.cobalt_sulfide.name=Cobalt Sulfide
+metaitem.nickel_rare_residue_dust.name=Nickel Rare Residue
+metaitem.nickel_sulfate_precipitate_dust.name=Nickel Sulfate Precipitate
+metaitem.copper_free_nickel_sulfate_dust.name=Copper-Free Nickel Sulfide
+metaitem.nickel_sulfide_dust.name=Nickel Sulfide
+metaitem.cobalt_sulfide_dust.name=Cobalt Sulfide
 fluid.nickel_sulfuric_solution=Nickel Sulfuric Solution
 fluid.arsenic_solution=Sodium Arsenate Sulfuric Solution
 fluid.ammonia_metal_sulfuric_solution=Ammonia Metal Sulfuric Solution
 
-metaitem.cu_sn_fe_oxides_mix.name=Copper Tin Iron Oxides Mixture
-metaitem.tin_copper_mix.name=Tin Copper Mixture
-metaitem.impure_tin_dust.name=Impure Tin Dust
-metaitem.iron_silicate_residue.name=Iron Silicate Residue
+metaitem.cu_sn_fe_oxides_mix_dust.name=Copper Tin Iron Oxides Mixture
+metaitem.tin_copper_mix_dust.name=Tin Copper Mixture
+metaitem.impure_tin_dust_dust.name=Impure Tin Dust
+metaitem.iron_silicate_residue_dust.name=Iron Silicate Residue
 
-metaitem.gold_telluride.name=Gold Telluride
+metaitem.gold_telluride_dust.name=Gold Telluride
 fluid.thiourea=Thiourea
 fluid.gold_thiourea_solution=Gold Thiourea Solution
 
-metaitem.thorium_sulfate.name=Thorium Sulfate
-metaitem.thorium_fluoride.name=Thorium Fluoride
+metaitem.thorium_sulfate_dust.name=Thorium Sulfate
+metaitem.thorium_fluoride_dust.name=Thorium Fluoride
 fluid.molten_calcium_salts=Molten Calcium Salts
 fluid.rare_earth_sulfate_solution=Rare Earth Sulfate Solution
 
-metaitem.roasted_rheniite.name=Roasted Rheniite
-metaitem.ree_filtered_rheniite_residual_oxides.name=REE-Filtered Rheniite Residual Oxides
-metaitem.rheniite_residual_oxides.name=Rheniite Residual Oxides
-metaitem.leucine.name=Leucine
+metaitem.roasted_rheniite_dust.name=Roasted Rheniite
+metaitem.ree_filtered_rheniite_residual_oxides_dust.name=REE-Filtered Rheniite Residual Oxides
+metaitem.rheniite_residual_oxides_dust.name=Rheniite Residual Oxides
+metaitem.leucine_dust.name=Leucine
 fluid.used_rhenium_separation_mixture=Used Rhenium Separation Mixture
 
-metaitem.sodium_zirconate.name=Sodium Zirconate
-metaitem.zirconium_hydrogenphosphate.name=Zirconium Hydrogenphosphate
+metaitem.sodium_zirconate_dust.name=Sodium Zirconate
+metaitem.zirconium_hydrogenphosphate_dust.name=Zirconium Hydrogenphosphate
 fluid.zinc_vanadyl_sulfate_solution=Zinc Vanadyl Sulfate Solution
 fluid.purified_zinc_vanadyl_sulfate_solution=Purified Zinc Vanadyl Sulfate Solution
-metaitem.lead_sulfate.name=Lead Sulfate
-metaitem.copper_sulfide.name=Copper Sulfide
+metaitem.lead_sulfate_dust.name=Lead Sulfate
+metaitem.copper_sulfide_dust.name=Copper Sulfide
 
-metaitem.roasted_carrolite.name=Roasted Carrolite
+metaitem.roasted_carrolite_dust.name=Roasted Carrolite
 fluid.carrolite_sulfuric_solution=Carrolite Sulfuric Solution
-fluid.impure_cobalt_sulfide_solution=Impure Cobalt Sulfate Solution
-metaitem.cobalt_oxide_hydroxide.name=Cobalt Oxide Hydroxide
-metaitem.sodium_hydrosulfide.name=Sodium Hydrosulfide
+fluid.impure_cobalt_sulfate_solution=Impure Cobalt Sulfate Solution
+metaitem.cobalt_oxide_hydroxide_dust.name=Cobalt Oxide Hydroxide
+metaitem.sodium_hydrosulfide_dust.name=Sodium Hydrosulfide
+
+metaitem.hafnium_oxalate_dust.name=Hafnium Oxalate
+fluid.hafnium_oxide_np_solution=Hafnium Oxide Nanoparticles Suspension
+metaitem.rubidium_nitrate_dust.name=Rubidium Nitrate
+metaitem.enriched_naquadah_oxalate_dust.name=Enriched Naquadah Oxalate
+metaitem.trinium_oxalate_dust.name=Trinium Oxalate
+metaitem.engraved_lithium_niobate_plate_gem_flawless.name=Engraved Lithium Niobate Plate
+fluid.thermochromatic_solution=Thermochromatic Solution
+fluid.advanced_thermochromatic_solution=Advanced Thermochromatic Solution
+
+metaitem.pzt.tourmaline.sensor.crystal.name=Pyropiezoelectric Crystal
+metaitem.tourmaline.altered.yellow.lens.name=Altered Tourmaline Yellow Lens
+metaitem.tourmaline.altered.orange.lens.name=Altered Tourmaline Orange Lens
+metaitem.tourmaline.altered.green.lens.name=Altered Tourmaline Green Lens
+metaitem.tourmaline.altered.light.blue.lens.name=Altered Tourmaline Light Blue Lens
+metaitem.tourmaline.altered.white.lens.name=Altered Tourmaline White Lens
+metaitem.tourmaline.altered.blue.lens.name=Altered Tourmaline Blue Lens
+metaitem.tourmaline.altered.magenta.lens.name=Altered Tourmaline Magenta Lens
+metaitem.tourmaline.altered.purple.lens.name=Altered Tourmaline Purple Lens
+metaitem.tourmaline.altered.lime.lens.name=Altered Tourmaline Lime Lens
+metaitem.tourmaline.altered.pink.lens.name=Altered Tourmaline Pink Lens
+metaitem.sensor.uiv.crystal.name=Sensor UIV Crystal
+
