@@ -16,17 +16,22 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 75,
+          "weight": 55,
           "value": "ore:bauxite"
         },
         {
-          "weight": 15,
+          "weight": 18,
           "value": "ore:ilmenite"
         },
         {
-          "weight": 3,
+          "weight": 12,
           "value": "ore:rutile"
+        },
+        {
+          "weight": 15,
+          "value": "ore:kaolinite"
         }
+
       ]
     }
   }

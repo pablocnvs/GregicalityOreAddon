@@ -22,23 +22,23 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 20,
+          "weight": 21,
           "value": "ore:caliche"
         },
         {
-          "weight": 25,
+          "weight": 27,
           "value": "ore:rock_salt"
         },
         {
-          "weight": 15,
+          "weight": 16,
           "value": "ore:lepidolite"
         },
         {
-          "weight": 20,
+          "weight": 22,
           "value": "ore:saltpeter"
         },
         {
-          "weight": 10,
+          "weight": 5,
           "value": "ore:amblygonite"
         }
       ]
