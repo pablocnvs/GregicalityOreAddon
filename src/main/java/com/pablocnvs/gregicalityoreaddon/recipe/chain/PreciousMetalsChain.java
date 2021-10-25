@@ -1,5 +1,7 @@
 package com.pablocnvs.gregicalityoreaddon.recipe.chain;
 
+import gregicadditions.recipes.helper.HelperMethods;
+
 import static com.pablocnvs.gregicalityoreaddon.GAOEMaterialHandler.*;
 import static gregicadditions.GAMaterials.*;
 import static gregtech.api.recipes.RecipeMaps.*;
@@ -7,8 +9,9 @@ import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
 import static gregicadditions.recipes.GARecipeMaps.*;
 
-public class RheniumChain {
+public class PreciousMetalsChain {
     public static void init(){
+        //Rhenium
         BLAST_RECIPES.recipeBuilder()
                 .duration(200)
                 .EUt(500000)
@@ -19,6 +22,18 @@ public class RheniumChain {
                 .fluidInputs(SulfurTrioxide.getFluid(8000))
                 .outputs(RoastedRheniite.getItemStack(10))
                 .fluidOutputs(RheniumSulfuricSolution.getFluid(12000))
+                .buildAndRegister();
+
+        LARGE_MIXER_RECIPES.recipeBuilder()
+                .fluidInputs(Kerosene.getFluid(2000))
+                .fluidInputs(Alamine336.getFluid(500))
+                .fluidInputs(Octanol.getFluid(250))
+                .fluidInputs(MethylIsobutylKetone.getFluid(500))
+                .fluidInputs(AceticAcid.getFluid(375))
+                .fluidInputs(IsoamylAlcohol.getFluid(375))
+                .fluidOutputs(RheniumSeparationMixture.getFluid(4000))
+                .EUt(7680)
+                .duration(90)
                 .buildAndRegister();
 
         LARGE_CHEMICAL_RECIPES.recipeBuilder()
@@ -100,6 +115,48 @@ public class RheniumChain {
                 .fluidOutputs(MethylIsobutylKetone.getFluid(1000))
                 .output(dust, Calcite)
                 .fluidOutputs(Ammonia.getFluid(1000))
+                .buildAndRegister();
+
+        //Cooperite
+
+        BLAST_RECIPES.recipeBuilder().duration(320).EUt(240).blastFurnaceTemp(3400)
+                .input(dust, Cooperite, 6)
+                .inputs(BariumPeroxide.getItemStack(9))
+                .outputs(RoastedCooperite.getItemStack(9))
+                .output(dust, Garnierite, 2)
+                .fluidOutputs(SulfurDioxide.getFluid(1000))
+                .buildAndRegister();
+
+        LARGE_CHEMICAL_RECIPES.recipeBuilder().duration(620).EUt(240)
+                .inputs(RoastedCooperite.getItemStack(12))
+                .inputs(PotassiumFerrocyanide.getItemStack(51))
+                .fluidInputs(SodiumThiocyanate.getFluid(6000))
+                .input(dust, Sodium, 6)
+                .fluidInputs(HydrogenPeroxide.getFluid(6600))
+                .fluidInputs(SulfuricAcid.getFluid(12000))
+                .output(dust, PlatinumMetallicPowder, 12)
+                .output(dust, PalladiumMetallicPowder, 6)
+                .output(dust, Barite, 54)
+                .fluidOutputs(RhodiumSulfate.getFluid(3000))
+                .fluidOutputs(ResidualCooperiteSolution.getFluid(15600))
+                .fluidOutputs(HydrogenCyanide.getFluid(5500))
+                .fluidOutputs(GoldCyanide.getFluid(500))
+                .buildAndRegister();
+
+        LARGE_CENTRIFUGE_RECIPES.recipeBuilder().duration(410).EUt(30)
+                .fluidInputs(ResidualCooperiteSolution.getFluid(7800))
+                .output(dust, SodiumSulfide, 9)
+                .output(dust, Potash, 9)
+                .outputs(PrussianBlue.getItemStack(20))
+                .fluidOutputs(Water.getFluid(7800))
+                .buildAndRegister();
+
+        LARGE_CHEMICAL_RECIPES.recipeBuilder().duration(290).EUt(60)
+                .inputs(PrussianBlue.getItemStack(40))
+                .fluidInputs(HydrochloricAcid.getFluid(18000))
+                .fluidOutputs(Iron2Chloride.getFluid(3000))
+                .fluidOutputs(IronChloride.getFluid(4000))
+                .fluidOutputs(HydrogenCyanide.getFluid(18000))
                 .buildAndRegister();
 
     }

@@ -13,8 +13,8 @@
   },
   "biome_modifier": {
     "type": "biome_dictionary",
-    "SANDY": 15,
-    "BEACH": 15
+    "SANDY": 8,
+    "BEACH": 8
   },
   "filler": {
     "type": "simple",

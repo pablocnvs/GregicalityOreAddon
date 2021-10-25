@@ -29,8 +29,8 @@ public class GAOEMetaItem extends MaterialMetaItem {
     @Override
     public void registerSubItems(){
         PIEZOPYROELECTRIC_SENSOR_CRYSTAL = addItem(0, "pzt.tourmaline.sensor.crystal");
-        //STYRENE_MESH = addItem(1, "styrene.mesh");
-        //CLOGGED_STYRENE_MESH = addItem(2, "clogged.styrene.mesh");
+        STYRENE_MESH = addItem(1, "styrene.mesh");
+        CLOGGED_STYRENE_MESH = addItem(2, "clogged.styrene.mesh");
         TOURMALT_YELLOW_LENS = addItem(3, "tourmaline.altered.yellow.lens");
         TOURMALT_ORANGE_LENS = addItem(4, "tourmaline.altered.orange.lens");
         TOURMALT_GREEN_LENS = addItem(5, "tourmaline.altered.green.lens");

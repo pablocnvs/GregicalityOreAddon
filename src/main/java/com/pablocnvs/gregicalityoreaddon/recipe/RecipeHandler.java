@@ -7,6 +7,7 @@ import gregtech.api.unification.ore.OrePrefix;
 import gregtech.api.util.GTUtility;
 import net.minecraft.item.ItemStack;
 
+import static com.pablocnvs.gregicalityoreaddon.GAOEConfig.newGoldChain;
 import static com.pablocnvs.gregicalityoreaddon.GAOEConfig.tripleOresFrothFlotation;
 import static com.pablocnvs.gregicalityoreaddon.GAOEMaterialHandler.*;
 import static gregtech.api.recipes.RecipeMaps.CHEMICAL_BATH_RECIPES;
@@ -50,8 +51,15 @@ public class RecipeHandler {
         TelluriumChain.init();
         TourmalineAndSensor.init();
         ThoriumChains.init();
-        RheniumChain.init();
+        PreciousMetalsChain.init();
         CobaltChain.init();
+        CopperChain.init();
+        CesiumChain.init();
+        MicaClayChain.init();
+        MolybdenumTungstenChain.init();
+        if (newGoldChain){
+            GoldChain.init();
+        }
     }
 
 }

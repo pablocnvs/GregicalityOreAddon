@@ -50,7 +50,8 @@ public class TourmalineAndSensor {
                 .fluidOutputs(Hydrogen.getFluid(1000))
                 .buildAndRegister();
 
-        /*LARGE_CHEMICAL_RECIPES.recipeBuilder()
+        /*
+        LARGE_CHEMICAL_RECIPES.recipeBuilder()
                 .duration(210)
                 .EUt(32750)
                 .input(dust, Trinium)
@@ -202,6 +203,7 @@ public class TourmalineAndSensor {
 
         ASSEMBLY_LINE_RECIPES.recipeBuilder().duration(600).EUt(3932160)
                 .input(frameGt, Cinobite)
+                .inputs(MagnetorestrictiveAlloy.getItemStack(4))
                 .fluidInputs(LiquidCrystalDetector.getFluid(2500))
                 .input(foil, NaquadahAlloy, 64)
                 .input(cableGtSingle, BlackTitanium, 8)
@@ -209,7 +211,7 @@ public class TourmalineAndSensor {
                 .inputs(BOSE_EINSTEIN_COOLING_CONTAINER.getStackForm(12))
                 .input(circuit, UIV, 2)
                 .fluidInputs(SolderingAlloy.getFluid(L * 6))
-                .fluidInputs(TriniumTitanium.getFluid(L))
+                .fluidInputs(Trinium.getFluid(L))
                 .outputs(SENSOR_UIV.getStackForm())
                 .buildAndRegister();
     }

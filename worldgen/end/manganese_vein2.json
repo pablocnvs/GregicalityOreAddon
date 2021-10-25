@@ -18,23 +18,23 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 22,
+          "weight": 23,
           "value": "ore:pyrolusite"
         },
         {
-          "weight": 22,
+          "weight": 17,
           "value": "ore:rhodocrosite"
         },
         {
-          "weight": 9,
+          "weight": 18,
+          "value": "ore:wolframite"
+        },
+        {
+          "weight": 16,
           "value": "ore:tantalite"
         },
         {
-          "weight": 22,
-          "value": "ore:grossular"
-        },
-        {
-          "weight": 22,
+          "weight": 16,
           "value": "ore:spessartine"
         }
       ]

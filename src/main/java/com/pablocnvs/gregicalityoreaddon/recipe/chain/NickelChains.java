@@ -23,6 +23,7 @@ public class NickelChains {
                 .outputs(NickelRareResidue.getItemStack())
                 .fluidOutputs(NickelSulfuricSolution.getFluid(10000))
                 .buildAndRegister();
+
         SIFTER_RECIPES.recipeBuilder()
                 .duration(450)
                 .EUt(125)
@@ -100,5 +101,36 @@ public class NickelChains {
                 .output(dust, Nickel)
                 .fluidOutputs(HydrogenSulfide.getFluid(1000))
                 .buildAndRegister();
+
+        //Garniterite
+
+        BLAST_RECIPES.recipeBuilder().duration(540).EUt(60).blastFurnaceTemp(950)
+                .input(dust, Garnierite, 6)
+                .input(dustSmall, Carbon, 6)
+                .input(dust, SiliconDioxide)
+                .outputs(ImpureNickelDust.getItemStack(3))
+                .output(dustTiny, Ferrosilite, 15)
+                .fluidOutputs(CarbonDioxide.getFluid(1500))
+                .buildAndRegister();
+
+        CHEMICAL_RECIPES.recipeBuilder().duration(250).EUt(60)
+                .inputs(ImpureNickelDust.getItemStack(3))
+                .fluidInputs(CarbonMonoxde.getFluid(12000))
+                .outputs(GarnieriteResidualOxides.getItemStack(2))
+                .fluidOutputs(NickelCarbonyl.getFluid(3000))
+                .buildAndRegister();
+
+        CENTRIFUGE_RECIPES.recipeBuilder().duration(215).EUt(30)
+                .inputs(GarnieriteResidualOxides.getItemStack(11))
+                .output(dust, CobaltOxide, 4)
+                .output(dust, PhosphorousPentoxide, 7)
+                .buildAndRegister();
+
+        DISTILLATION_RECIPES.recipeBuilder().duration(220).EUt(50)
+                .fluidInputs(NickelCarbonyl.getFluid(1000))
+                .fluidOutputs(CarbonMonoxde.getFluid(4000))
+                .output(dust, Nickel)
+                .buildAndRegister();
+
     }
 }

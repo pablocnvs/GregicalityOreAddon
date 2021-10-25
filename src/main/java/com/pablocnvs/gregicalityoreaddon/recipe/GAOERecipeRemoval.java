@@ -6,10 +6,13 @@ import gregtech.api.unification.OreDictUnifier;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.FluidStack;
 
+import static com.pablocnvs.gregicalityoreaddon.GAOEConfig.*;
 import static gregicadditions.GAMaterials.*;
 import static gregicadditions.item.GAMetaItems.BOSE_EINSTEIN_COOLING_CONTAINER;
-import static gregicadditions.item.GAMetaItems.SENSOR_UEV;
+import static gregicadditions.recipes.GARecipeMaps.LARGE_MIXER_RECIPES;
 import static gregtech.api.GTValues.L;
+import static gregtech.api.recipes.RecipeMaps.CHEMICAL_RECIPES;
+import static gregtech.api.recipes.RecipeMaps.ELECTROLYZER_RECIPES;
 import static gregtech.api.unification.material.MarkerMaterials.Tier.Infinite;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
@@ -34,5 +37,25 @@ public class GAOERecipeRemoval {
                 ,BOSE_EINSTEIN_COOLING_CONTAINER.getStackForm(8)
                 ,OreDictUnifier.get(circuit, UEV, 2)}
                 ,new FluidStack[]{SolderingAlloy.getFluid(L * 4)});
+        HelperMethods.removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Tungstate, 7)
+                ,OreDictUnifier.get(dust, SodiumHydroxide, 6)}, new FluidStack[]{});
+        HelperMethods.removeRecipesByInputs(LARGE_MIXER_RECIPES, Kerosene.getFluid(2000)
+                ,Trioctylamine.getFluid(500)
+                ,Octanol.getFluid(250), MethylIsobutylKetone.getFluid(500)
+                ,AceticAcid.getFluid(375)
+                ,IsoamylAlcohol.getFluid(375));
+
+        if (newGoldChain){
+            HelperMethods.removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(ingot, GoldAlloy, 4)},
+                    new FluidStack[]{NitricAcid.getFluid(1000)});
+            HelperMethods.removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{GoldLeach.getItemStack(4)},
+                    new FluidStack[]{HydrochloricAcid.getFluid(1000)});
+            HelperMethods.removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, RockSalt, 2)},
+                    new FluidStack[]{Water.getFluid(1000)});
+            HelperMethods.removeRecipesByInputs(CHEMICAL_RECIPES, new ItemStack[]{OreDictUnifier.get(dust, Potassium, 2)
+                    , OreDictUnifier.get(dust, Sulfur, 2)},
+                    new FluidStack[]{Oxygen.getFluid(5000)});
+            HelperMethods.removeRecipesByInputs(ELECTROLYZER_RECIPES, OreDictUnifier.get(dust, RockSalt, 2));
+        }
     }
 }

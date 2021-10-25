@@ -13,6 +13,7 @@ material.thorite=Thorite
 material.tourmaline=Tourmaline
 material.vanadinite=Vanadinite
 material.carrolite=Carrolite
+material.wolframite=Wolframite
 
 fluid.froth_flotation_fluid=Froth Flotation Fluid
 fluid.dibenzyl_peroxide=Dibenzyl Peroxide
@@ -108,4 +109,55 @@ metaitem.tourmaline.altered.purple.lens.name=Altered Tourmaline Purple Lens
 metaitem.tourmaline.altered.lime.lens.name=Altered Tourmaline Lime Lens
 metaitem.tourmaline.altered.pink.lens.name=Altered Tourmaline Pink Lens
 metaitem.sensor.uiv.crystal.name=Sensor UIV Crystal
+metaitem.styrene.mesh.name=Styrene Mesh
+metaitem.clogged.styrene.mesh.name=Clogged Styrene Mesh
 
+metaitem.impure_nickel_dust_dust.name=Impure Nickel Dust
+metaitem.nio_residual_oxides_dust.name=Residual Nickel Oxides
+fluid.nickel_carbonyl=Nickel Carbonyl
+
+fluid.mica_clay_slurry=Mica Clay Slurry
+fluid.miclay_output_gasses=Mica Clay Output GAsses
+fluid.alkaline_solution_mica_clay=Alkaline Solution Mica Clay
+metaitem.fused_mica_clay_mix_dust.name=Fuse Mica Clay Mix
+metaitem.silicate_oxide_micaclay_residue_dust.name=Silicate Oxide Mica Clay Residue
+
+metaitem.fe_ca_si_slag_dust.name=Iron Calcium Silica Slag
+metaitem.fe_ca_oxides_dust.name=Iron Calcium Hydroxides
+metaitem.al_cr_sulfates_dust.name=Aluminium Chromium Sulfate
+metaitem.zr_hf_fluorides_dust.name=Zirconium Hafnium Fluorides
+metaitem.cerium_fluoride_dust.name=Cerium Fluoride
+metaitem.roasted_cooperite_dust.name=Roasted Cooperite
+fluid.residual_cooperite_solution=Residual Cooperite Solution
+
+fluid.pollucite_alkali_chlorides=Pollucite Alkali Chlorides
+fluid.cs_free_alkali_chlorides=Cesium Free Alkali Chlorides
+metaitem.cesium_permanganate_dust.name=Caesium Permanganate
+metaitem.cesium_chloride_dust.name=Caesium Chloride
+metaitem.rubidium_chloride_dust.name=Rubidium Chloride
+fluid.nak_chlorides_solution=Sodium Potassium Chlorides Solution
+metaitem.iron_hydroxide_dust.name=Iron Hydroxide
+metaitem.potassium_perchlorate_dust.name=Potassium Perchlorate
+metaitem.calcium_sulfide_dust.name=Calcium Sulfide
+
+fluid.impure_potassium_molybdate=Impure Potassium Molybdate
+metaitem.roasted_wulfenite_dust.name=Roasted Wulfenite
+metaitem.copper_lead_sulfides_dust.name=Copper Lead Sulfide
+fluid.impure_sodium_molybdate=Impure Sodium Molybdate Solution
+fluid.asp_free_molybdate_solution=Arsenic Phosphorous Free Molybdate Solution
+metaitem.magnesium_phosphate_dust.name=Magnesium Phosphate
+metaitem.magnesium_arsenate_dust.name=Magnesium Arsenate
+metaitem.ammonium_paratungstate_dust.name=Ammonium Paratungstate
+metaitem.ammonium_molybdate_dust.name=Ammonium Molybdate
+fluid.decyl_iodide=Decyl Iodide
+fluid.tridecylamine=Tridecylamine
+fluid.alamine_336=Alamine 336
+fluid.amine_tungsten_separation_mix=Amine Tungsten Separation Mix
+fluid.amine_tungstate_solution=Amine Polytungstate Solution
+fluid.tungsten_extraction_residue=Tungsten Extraction Residue
+metaitem.sodium_tetrathiomolybdate_dust.name=Sodium Tetrathiomolybdate
+metaitem.iron_manganese_hydroxide_dust.name=Iron Manganese Hydroxides
+
+fluid.precious_leach_nitrate=Precious Leach Nitrate
+fluid.residual_copper_nitrate=Residual Copper Nitrate
+metaitem.potassium_bisulfate_dust.name=Potassium Bisulfate

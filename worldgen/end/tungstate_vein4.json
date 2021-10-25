@@ -1,16 +1,16 @@
 {
-  "weight": 1,
-  "density": 0.5,
-  "min_height": 12,
-  "max_height": 36,
+  "weight": 9,
+  "density": 0.4,
+  "max_height": 50,
+  "min_height": 20,
   "dimension_filter": ["name:the_end"],
   "vein_populator": {
     "type": "surface_rock",
-    "material": "rheniite"
+    "material": "lithium"
   },
   "generator": {
     "type": "ellipsoid",
-    "radius": [5, 8]
+    "radius": [8, 8]
   },
   "filler": {
     "type": "simple",
@@ -18,20 +18,20 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 25,
-          "value": "ore:rheniite"
+          "weight": 55,
+          "value": "ore:scheelite"
         },
         {
           "weight": 20,
-          "value": "ore:triniite"
+          "value": "ore:tungstate"
+        },
+        {
+          "weight": 15,
+          "value": "ore:amblygonite"
         },
         {
           "weight": 10,
-          "value": "ore:rarest_metal_residue"
-        },
-        {
-          "weight": 25,
-          "value": "ore:carnotite"
+          "value": "ore:sylvanite"
         }
       ]
     }
