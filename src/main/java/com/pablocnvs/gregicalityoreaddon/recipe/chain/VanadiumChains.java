@@ -77,7 +77,7 @@ public class VanadiumChains {
                 .EUt(125)
                 .inputs(ZirconiumHydrogenphosphate.getItemStack(13))
                 .fluidInputs(HydrochloricAcid.getFluid(4000))
-                .outputs(ZirconiumTetrachloride.getItemStack(1000))
+                .outputs(ZirconiumTetrachloride.getItemStack(5))
                 .fluidOutputs(PhosphoricAcid.getFluid(2000))
                 .buildAndRegister();
 
