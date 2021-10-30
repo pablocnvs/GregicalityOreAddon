@@ -18,19 +18,23 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 55,
-          "value": "ore:scheelite"
+          "weight": 25,
+          "value": "ore:cassiterite"
         },
         {
-          "weight": 20,
-          "value": "ore:tungstate"
+          "weight": 35,
+          "value": "ore:wolframite"
+        },
+        {
+          "weight": 35,
+          "value": "ore:schellite"
         },
         {
           "weight": 15,
           "value": "ore:amblygonite"
         },
         {
-          "weight": 10,
+          "weight": 20,
           "value": "ore:sylvanite"
         }
       ]

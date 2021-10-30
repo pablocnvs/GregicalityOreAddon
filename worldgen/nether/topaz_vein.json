@@ -18,16 +18,16 @@
       "type": "weight_random",
       "values": [
         {
-          "weight": 55,
+          "weight": 50,
           "value": "ore:topaz"
         },
         {
-          "weight": 40,
+          "weight": 35,
           "value": "ore:blue_topaz"
         }
       ,
         {
-          "weight": 5,
+          "weight": 15,
           "value": "ore:zirkelite"
         }
       ]
