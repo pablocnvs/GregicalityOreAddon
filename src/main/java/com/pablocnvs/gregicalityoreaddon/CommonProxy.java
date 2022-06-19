@@ -37,6 +37,7 @@ public class CommonProxy {
         GAOEMetaFluids.init();
         GAOEMetaItems.init();
         RecipeHandler.register();
+        GAOETexture.preInit();
     }
 
     public void onLoad() throws IOException {
